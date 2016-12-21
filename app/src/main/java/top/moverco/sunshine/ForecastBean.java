@@ -7,6 +7,15 @@ import java.util.Date;
  */
 
 public class ForecastBean {
+    /**
+     *
+     */
+    private Date date = new Date();
+    private String weather ;
+    private int hi_tem,lo_tem;
+    private int src;
+
+
     public Date getDate() {
         return date;
     }
@@ -46,10 +55,5 @@ public class ForecastBean {
     public void setSrc(int src) {
         this.src = src;
     }
-
-    private Date date = new Date();
-    private String weather ;
-    private int hi_tem,lo_tem;
-    private int src;
 
 }

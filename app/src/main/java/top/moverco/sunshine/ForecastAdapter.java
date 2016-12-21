@@ -17,6 +17,8 @@ import java.util.List;
 public class ForecastAdapter extends BaseAdapter {
     List<ForecastBean> forecastItem = new ArrayList<ForecastBean>();
     LayoutInflater layoutInflater;
+
+    int resourceId;
     ForecastAdapter(Context mContext){
         this.layoutInflater = LayoutInflater.from(mContext);
     }
@@ -40,10 +42,19 @@ public class ForecastAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
         if(convertView==null){
+            View view = LayoutInflater.from().inflate(resourceId,null);
 
+            viewHolder = new ViewHolder();
+            viewHolder.date_view = (TextView) convertView.findViewById(R.id.date);
+            viewHolder.hi_tem_view = (TextView) convertView.findViewById(R.id.hi_tempreture);
+            viewHolder.lo_tem_view = (TextView) convertView.findViewById(R.id.lo_tempreture);
+            viewHolder.weather_view = (TextView) convertView.findViewById(R.id.weather);
+            viewHolder.weather_image_view = (ImageView) convertView.findViewById(R.id.weather_image);
+            view.setTag(viewHolder);
+            return convertView;
         }
 
-
+        return convertView;
     }
      class ViewHolder {
         TextView date_view,weather_view,hi_tem_view,lo_tem_view;
