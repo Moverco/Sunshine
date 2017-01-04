@@ -1,7 +1,5 @@
 package top.moverco.sunshine;
 
-import java.util.Date;
-
 /**
  * Created by liuzongxiang on 2016/12/20.
  */
@@ -10,17 +8,17 @@ public class ForecastBean {
     /**
      *
      */
-    private Date date = new Date();
+    private String date;
     private String weather ;
     private int hi_tem,lo_tem;
     private int src;
 
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
