@@ -8,11 +8,11 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="top.moverco.sunshine.MainActivity">
+    tools:context="top.moverco.sunshine.activity.MainActivity">
 
 <fragment
     android:id="@+id/list_fragment"
-    android:name="top.moverco.sunshine.ListFragment"
+    android:name="top.moverco.sunshine.fragment.ListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout="@layout/listfragment"></fragment>

@@ -1,4 +1,4 @@
-package top.moverco.sunshine;
+package top.moverco.sunshine.bean;
 
 /**
  * Created by liuzongxiang on 2016/12/20.
